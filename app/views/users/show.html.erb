@@ -1,0 +1,10 @@
+<h1><%= current_user.username%> Profile</h1>
+
+<p><strong>Username:</strong> <%= current_user.username %></p>
+<p><strong>Email:</strong> <%= current_user.email %></p>
+
+<%= link_to "Edit Profile" , edit_user_registration_path, :class => 'btn btn-success'%>
+
+<h1> On your list</h1>
+
+
