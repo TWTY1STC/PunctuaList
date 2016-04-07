@@ -7,8 +7,11 @@ require 'spec_helper'
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
+<<<<<<< 868844396fb0f704a5794f17fd7538db6d85178a
 require 'factory_girl_rails'
 
+=======
+>>>>>>> Ongoing #5, rspec and partials errors
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
 # run as spec files by default. This means that files in spec/support that end
