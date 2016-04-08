@@ -1,20 +1,21 @@
 class ItemsController < ApplicationController
-  
-  def new
-    @item = Item.new
-  end
+
   
   def create
-    @item = Item.new
-    @name = params[:item][:name]
+    @item = current_user.items.new(item_params)
     
     if @item.save
       flash[:notice] = "Item has been successfully added to your list"
       redirect_to root_path
     else
       flash[:alert] = "There was an error saving your list item. Please try again"
-      render :new
+      render 'items/form'
     end
   end
-  
+
+private
+
+def item_params
+  params.require(:item).permit(:name)
+end
 end
