@@ -3,6 +3,7 @@
   <%= form_for [current_user, @item] do |f| %>
       <%= f.label :name %>
     <%= f.text_area :name, class: 'form-control', placeholder: "Enter a new to-do item" %>
-    <%= f.submit "Save", class: 'btn btn-success' %>
+
+    <button type='submit' class="btn btn-success">Save</button>
   <% end %>
 </div>

@@ -6,11 +6,10 @@ class ItemsController < ApplicationController
     
     if @item.save
       flash[:notice] = "Item has been successfully added to your list"
-      redirect_to root_path
     else
       flash[:alert] = "There was an error saving your list item. Please try again"
-      render 'items/form'
     end
+     redirect_to root_path
   end
 
 private

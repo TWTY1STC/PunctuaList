@@ -1,8 +1,11 @@
-
-<% current_user.items.each do |item| %>
-  <h3><%= item.name %></h3>
-   
-    <small>
-        created <%= time_ago_in_words(item.created_at) %> ago 
-    </small>
-<% end %>
+<tr>
+  <td>
+    <%= item.name %>
+  </td>
+  <td>
+    <%= time_ago_in_words(item.created_at) %>
+  </td>
+  <td>
+    <!-- checkbox here -->
+  </td>
+</tr>
