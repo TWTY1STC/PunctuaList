@@ -19,7 +19,10 @@ class ItemsController < ApplicationController
     else
       flash.now[:alert] = "There was an error deleting your completed task. Please try again."
     end
-    redirect_to root_path
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
   
   private
