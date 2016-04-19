@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
       format.js
     end
   end
-
+  
   def destroy
     @item = current_user.items.find(params[:id])
     
