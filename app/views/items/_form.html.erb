@@ -1,6 +1,6 @@
 
 <div class="form-group">
-  <%= form_for [current_user, @item], remote: true do |f| %>
+  <%= form_for [current_user, Item.new], remote: true do |f| %>
       <%= f.label :name %>
     <%= f.text_area :name, class: 'form-control', placeholder: "Enter a new to-do item" %>
 
