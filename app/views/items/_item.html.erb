@@ -6,6 +6,6 @@
     <%= time_ago_in_words(item.created_at) %>
   </td>
   <td>
-    <%= link_to "", user_item_path(current_user, item.id), method: :delete, class: 'glyphicon glyphicon-ok' %>
+    <%= link_to "", user_item_path(current_user, item.id), remote: true, method: :delete, class: 'glyphicon glyphicon-ok' %>
   </td>
 </tr>
