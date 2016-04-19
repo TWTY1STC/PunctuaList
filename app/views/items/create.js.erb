@@ -1,0 +1,7 @@
+<% if @item.valid? %>
+  $('.table').append("<%= escape_javascript(render(@item)) %>");
+  $('.new_item_form').html("<%= escape_javascript(render partial: 'items/form') %>");
+  $('.flash').html("<div class='alert alert-success'><button type='button' class='close' data-dismiss='alert'>&times;</button><%=flash.now[:notice] %></div>");
+<% else %>
+  $('.flash').html("<div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert'>&times;</button><%=flash.now[:alert] %></div>");  
+<% end %>
