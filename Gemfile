@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'devise'
 gem 'bootstrap-sass'
-gem 'whenever', :require => false
+gem 'rufus-scheduler'
 
 group :production do
   gem 'pg'
